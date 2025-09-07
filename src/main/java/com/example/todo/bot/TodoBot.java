@@ -16,6 +16,12 @@ public class TodoBot extends TelegramLongPollingBot {
 
     private final TodoRepository todoRepository;
 
+    @Value("${telegram.bot.username}")
+    private String botUsername;
+
+    @Value("${telegram.bot.token}")
+    private String botToken;
+
     public TodoBot(TodoRepository todoRepository){
         this.todoRepository = todoRepository;
     }
@@ -27,7 +33,7 @@ public class TodoBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "8280805304:AAEOlBP0tz2smL66MBRJYEfKk2X0MR7JgSQ"; // 🔹 Токен от BotFather
+        return botToken; // 🔹 Токен от BotFather
     }
 
     @Override
