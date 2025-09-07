@@ -1,0 +1,8 @@
+com\example\todo\TodoApplication.class
+com\example\todo\bot\TodoBot.class
+com\example\todo\controller\TodoController.class
+com\example\todo\model\TodoItem.class
+com\example\todo\repository\ContactRepository.class
+com\example\todo\model\Contact.class
+com\example\todo\controller\ContactController.class
+com\example\todo\repository\TodoRepository.class
